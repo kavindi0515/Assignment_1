@@ -1,0 +1,23 @@
+{
+  "name": "playwright_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:swift": "playwright test swift-translator.spec.js",
+    "test:ui-tests": "playwright test --grep \"UI-\"",
+    "test:positive": "playwright test --grep \"PASS-\"",
+    "test:negative": "playwright test --grep \"FAIL-\"",
+    "test:all-headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "show-report": "playwright show-report --port 9323"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.0.10"
+  }
+}
